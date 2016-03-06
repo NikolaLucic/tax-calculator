@@ -1,0 +1,19 @@
+@(amount: Integer = 0)
+
+<html>
+<head>
+<title>Dutch tax calculator</title>
+</head>
+<body>
+	<div class="bottom_l">
+		<h1>Tax calculator</h1>
+	</div>
+	<form action="/calculate" method="post">
+		<div class="row">
+			<label for="grossAmount">Your gross amount: </label> <input type="text" name="grossAmount" /><a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+		</div>
+		<button type="submit">Calculate</button>
+	</form>
+	<h1>Recalculated: @amount</h1>
+</body>
+</html>
